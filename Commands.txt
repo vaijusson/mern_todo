@@ -1,0 +1,26 @@
+server:
+npm init -y
+npm install cors express mongoose nodemon dotenv
+heroku deploy:
+create .env, Procfile, .gitignore. Update package.json with "start node.js"
+follow heroku git instructions found on heroku website < create app
+
+client:
+npx create-react-app .
+npm install axios
+to start: npm start
+delete unnecessary file in the src folder like the tests, css.
+install the extn: html to jsx
+go to emmet settings and add the following to settings.json (locate the json file):
+    "emmet.includeLanguages": {
+           "javascript": "javascriptreact"
+    },
+    "emmet.triggerExpansionOnTab": true
+convert the html to jsx for the html code.
+
+npm run build
+npm install netlify-cli -g (first create netlify account; i used github login)
+netlify deploy
+publish dir: choose './build'
+
+you will get a url: https://61154dffd1011fed65d793b1--elegant-galileo-c8f05d.netlify.app
